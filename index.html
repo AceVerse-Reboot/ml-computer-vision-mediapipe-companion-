@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediaPipe Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="stage">
+      <video id="webcam" autoplay muted playsinline></video>
+      <canvas id="overlay"></canvas>
+
+      <div class="status" id="status">Press Start Camera</div>
+
+      <aside class="panel">
+        <div class="companion" id="companionEmoji">🤖</div>
+
+        <div class="result">
+          <span>Gesture</span>
+          <strong id="gestureValue">Waiting</strong>
+          <small id="gestureConfidence">–</small>
+        </div>
+
+        <div class="result">
+          <span>Fingers</span>
+          <strong id="fingerValue">–</strong>
+        </div>
+
+        <div class="result">
+          <span>Visible expression</span>
+          <strong id="expressionValue">Waiting</strong>
+          <small id="expressionConfidence">–</small>
+        </div>
+
+        <p class="note">
+          This estimates visible facial movements, not your internal emotional state.
+        </p>
+      </aside>
+
+      <button id="startButton">Start Camera</button>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
