@@ -22,4 +22,4 @@ The expression labels describe visible facial movements only. They do not determ
 4. Click **Start Camera**.
 5. Allow camera access.
 
-You need an internet connection on first load because the MediaPipe JavaScript package and model files are loaded from Google's/CDN servers.
+You need an internet connection on first load because the MediaPipe JavaScript package and model files are loaded from Google's/CDN servers. Make sure the Live Sever extension is installed in VS code.
